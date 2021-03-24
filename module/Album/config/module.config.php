@@ -10,7 +10,7 @@
     'router' => array(
         'routes' => array(
             'album' => array(
-                'type'    => 'segment',
+                'type' => 'segment',
                 'options' => array(
                     'route'    => '/album[/:action][/:id]',
                     'constraints' => array(

@@ -1,0 +1,7 @@
+<h1><?= $name ?></h1>
+<h2><?= $lastName ?></h2>
+<h3><?= $xpto ?></h3>
+
+<?php foreach ($categories as $category) : ?>
+  <p><?= $category['id'] ?> | <?= $category['name'] ?></p>
+<?php endforeach ?>

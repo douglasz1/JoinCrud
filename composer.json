@@ -10,7 +10,10 @@
     "require": {
         "php": "^5.6 || ^7.0",
         "zendframework/zendframework": "~2.4.11"
-    }, "autoload": {
-        "psr-0": { "Album": "module/Album/src/" }
+    }, 
+    "autoload": {
+        "psr-4": { 
+            "App\\": "module\\"
+        }
     }
 }
