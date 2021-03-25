@@ -9,15 +9,15 @@ class CategoryHomeController extends AbstractActionController
 {
     public function handleAction()
     {
+        /*echo '<pre>';
+        print_r($this->getServiceLocator());
+        die;*/
+
+        $categoryTable = $this->getServiceLocator()->get('Category\Models\CategoryTable');
+
         $view = new ViewModel([
-            'name' => 'Douglas',
-            'lastName' => 'Santana',
-            'xpto' => 'aaaaaaa',
-            'categories' => [
-                ['id' => 1, 'name' => 'A'],
-                ['id' => 2, 'name' => 'B'],
-                ['id' => 3, 'name' => 'C'],
-            ]
+            //'categories' => $categoryTable->fetchAll()
+            'categories' => []
         ]);
 
         $view->setTemplate('category/index');

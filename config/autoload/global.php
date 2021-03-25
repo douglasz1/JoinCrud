@@ -11,18 +11,17 @@
  * file.
  */
 
-return array(
-    'db' => array(
-        'driver'         => 'Pdo',
-        'dsn'            => 'mysql:dbname=myalbums;host=doug-db',
-        'driver_options' => array(
+return [
+    'db' => [
+        'driver' => 'Pdo',
+        'dsn' => 'mysql:dbname=myalbums;host=doug-db',
+        'driver_options' => [
             PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''
-        ),
-    ),
-    'service_manager' => array(
-        'factories' => array(
-            'Zend\Db\Adapter\Adapter'
-                    => 'Zend\Db\Adapter\AdapterServiceFactory',
-        ),
-    ),
-);
+        ]
+    ],
+    'service_manager' => [
+        'factories' => [
+            'Zend\Db\Adapter\Adapter' => 'Zend\Db\Adapter\AdapterServiceFactory',
+        ]
+    ]
+];
