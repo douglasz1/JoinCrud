@@ -15,7 +15,6 @@
 
 `$ docker-compose up -d --build`
 
-####Code Blocks (Indented style)
 
 Em config/autoload/ `local.example.php` Troque as variaveis de ambiente para o codigo abaixo
 
