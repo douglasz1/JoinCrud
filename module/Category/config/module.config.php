@@ -16,7 +16,7 @@ return [
     'router' => [
         'routes' => [
             'category_home' => [
-                'type' => 'segment',
+                'type' => 'literal',
                 'options' => [
                     'route' => '/category',
                     'defaults' => [
@@ -26,7 +26,7 @@ return [
                 ],
             ],
             'category_add' => [
-                'type' => 'segment',
+                'type' => 'literal',
                 'options' => [
                     'route' => '/category/add',
                     'defaults' => [
@@ -38,7 +38,7 @@ return [
             'category_edit' => [
                 'type' => 'segment',
                 'options' => [
-                    'route' => '/category/edit/:id',
+                    'route' => '/category/edit[/:id]',
                     'constraints' => [
                         'id' => '[0-9]+',
                     ],
@@ -51,7 +51,7 @@ return [
             'category_delete' => [
                 'type' => 'segment',
                 'options' => [
-                    'route' => '/category/delete/:id',
+                    'route' => '/category/delete[/:id]',
                     'constraints' => [
                         'id' => '[0-9]+',
                     ],

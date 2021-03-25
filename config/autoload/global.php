@@ -14,7 +14,7 @@
 return [
     'db' => [
         'driver' => 'Pdo',
-        'dsn' => 'mysql:dbname=myalbums;host=doug-db',
+        'dsn' => 'mysql:dbname=doug_db;host=doug-db',
         'driver_options' => [
             PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''
         ]

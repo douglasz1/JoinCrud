@@ -41,6 +41,7 @@ class CategoryTable
         $id = (int) $category->id_categoria_produto;
 
         if ($id == 0) {
+            unset($data['id_categoria_produto']);
             $this->tableGateway->insert($data);
             return;
         }
@@ -51,7 +52,7 @@ class CategoryTable
         }
     }
 
-    public function deleteCategory($id)
+    public function delete($id)
     {
         $this->tableGateway->delete(['id_categoria_produto' => (int) $id]);
     }
